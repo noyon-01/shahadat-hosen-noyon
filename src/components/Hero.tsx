@@ -77,7 +77,7 @@ const Hero = () => {
         {/* BADGE */}
         <motion.div
           variants={itemVariants}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-medium mb-8 mt-25 md:mt-10"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-medium mb-8 mt-25 md:mt-25"
         >
           <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
           AVAILABLE FOR WORK
@@ -86,31 +86,31 @@ const Hero = () => {
         {/* AVATAR */}
         <motion.div
           variants={itemVariants}
-          className="relative w-30 h-30 mx-auto mb-8"
+          className="relative w-50 h-50 mx-auto mb-8"
           whileHover={{ scale: 1.05 }}
         >
-          <div className="absolute inset-0 bg-brand-purple rounded-full blur-xl opacity-30 animate-pulse"></div>{" "}
+          <div className="absolute inset-0 bg-brand-purple rounded-full blur-2xl opacity-40 animate-pulse"></div>{" "}
           <motion.img
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1 }}
             alt="Noyon"
             className="relative w-full h-full rounded-full border-8 border-brand-purple/50 object-cover"
-            src="https://i.ibb.co.com/GfrzMcNh/2.jpg"
+            src="https://i.ibb.co.com/7tQBxSZJ/4-4.png"
           />
           <motion.div
-            className="absolute -bottom-1 -right-1 bg-brand-dark p-1 rounded-full border border-brand-border"
+            className="absolute bottom-4 right-5 bg-brand-dark p-1 rounded-full border border-brand-border"
             animate={{ y: [0, -5, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
           >
-            <span className="text-sm">👋</span>
+            <span className="text-xl">👋</span>
           </motion.div>
         </motion.div>
 
         {/* INTRO TEXT */}
         <motion.p
           variants={itemVariants}
-          className="text-gray-300 tracking-widest text-sm mb-4"
+          className="tracking-widest text-sm mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500"
         >
           I'm{" "}
           <span className="text-white text-[16px] font-semibold">

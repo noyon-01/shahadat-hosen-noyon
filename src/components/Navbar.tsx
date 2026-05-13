@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Magnetic from "./ui/Magnetic";
+import Link from "next/link";
 
 const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);

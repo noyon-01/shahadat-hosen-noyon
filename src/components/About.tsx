@@ -132,14 +132,14 @@ const About = () => {
                   </div>
 
                   {/* IMAGE */}
-                  <div className="relative w-[290px] md:w-[360px] h-[390px] my-8 mx-auto overflow-hidden rounded-[24px] border border-white/10">
+                  <div className="relative w-[290px] md:w-[380px] h-[450px] my-8 mx-auto overflow-hidden rounded-[24px] border border-white/10">
                     {/* OVERLAY */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10"></div>
 
                     <img
                       alt="About Noyon"
                       className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                      src="https://i.ibb.co.com/GfrzMcNh/2.jpg"
+                      src="https://i.ibb.co.com/JW6TJkYp/6.png"
                     />
 
                     {/* FLOATING LABEL */}
@@ -166,7 +166,7 @@ const About = () => {
             </motion.div>
 
             {/* INFO CARDS */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-5">
               {[
                 {
                   icon: "school",
