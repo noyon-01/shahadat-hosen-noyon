@@ -242,7 +242,11 @@ const Features = () => {
   );
 };
 
-const LottiePlayer = ({ url }: { url: string }) => {
+type LottiePlayerProps = {
+  url: string;
+};
+
+const LottiePlayer = ({ url }: LottiePlayerProps) => {
   const [animationData, setAnimationData] = useState(null);
 
   useEffect(() => {
