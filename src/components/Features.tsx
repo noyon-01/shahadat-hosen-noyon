@@ -15,29 +15,25 @@ const features = [
     title: "Performance First",
     desc: "Optimized for speed and accessibility with scalable engineering architecture.",
     icon: "speed",
-    lottie:
-      "https://assets10.lottiefiles.com/packages/lf20_at6mxejc.json",
+    lottie: "https://assets10.lottiefiles.com/packages/lf20_at6mxejc.json",
   },
   {
     title: "Modern UI/UX",
     desc: "Premium interfaces crafted with smooth interactions and futuristic aesthetics.",
     icon: "palette",
-    lottie:
-      "https://assets3.lottiefiles.com/packages/lf20_m6cu9mrc.json",
+    lottie: "https://assets3.lottiefiles.com/packages/lf20_m6cu9mrc.json",
   },
   {
     title: "Responsive Code",
     desc: "Flawless experiences across mobile, tablet, and desktop devices.",
     icon: "devices",
-    lottie:
-      "https://assets9.lottiefiles.com/packages/lf20_8rqSOn.json",
+    lottie: "https://assets9.lottiefiles.com/packages/lf20_8rqSOn.json",
   },
   {
     title: "Secure & Scalable",
     desc: "Built using modern security standards and scalable backend architecture.",
     icon: "shield",
-    lottie:
-      "https://assets2.lottiefiles.com/packages/lf20_6p8X9v.json",
+    lottie: "https://assets2.lottiefiles.com/packages/lf20_6p8X9v.json",
   },
 ];
 
@@ -65,7 +61,7 @@ const Features = () => {
           pin: true,
           anticipatePin: 1,
         },
-      }
+      },
     );
 
     return () => {
@@ -74,10 +70,7 @@ const Features = () => {
   }, []);
 
   return (
-    <section
-      className="overflow-hidden bg-[#050510] relative"
-      id="features"
-    >
+    <section className="overflow-hidden bg-[#050510] relative" id="features">
       {/* BACKGROUND GLOW */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-brand-purple/10 blur-[140px] rounded-full" />
 
@@ -118,8 +111,7 @@ const Features = () => {
               className="text-gray-400 mt-10 text-lg md:text-xl max-w-xl leading-relaxed"
             >
               Scroll horizontally to explore the engineering philosophy,
-              innovation, and premium experiences behind every project I
-              build.
+              innovation, and premium experiences behind every project I build.
             </motion.p>
 
             {/* SMALL LINE */}
@@ -166,7 +158,6 @@ const Features = () => {
                 />
 
                 <div className="relative z-10 flex flex-col md:flex-row items-center gap-12 md:gap-20">
-                  
                   {/* LEFT CONTENT */}
                   <div className="w-full md:w-1/2">
                     {/* ICON */}
@@ -231,7 +222,6 @@ const Features = () => {
 
                       {/* ANIMATION CONTAINER */}
                       <div className="relative w-[280px] h-[280px] md:w-[340px] md:h-[340px] rounded-full bg-brand-purple/5 border border-white/10 backdrop-blur-xl flex items-center justify-center overflow-hidden">
-                        
                         {/* INNER GLOW */}
                         <div className="absolute inset-0 bg-brand-purple/10 blur-3xl"></div>
 
@@ -252,16 +242,14 @@ const Features = () => {
   );
 };
 
-const LottiePlayer = ({ url }) => {
+const LottiePlayer = ({ url }: { url: string }) => {
   const [animationData, setAnimationData] = useState(null);
 
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setAnimationData(data))
-      .catch((err) =>
-        console.error("Lottie load error", err)
-      );
+      .catch((err) => console.error("Lottie load error", err));
   }, [url]);
 
   if (!animationData)
