@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sora: "Sora", sans-serif;
+  --color-brand-purple: #8b5cf6;
+  --color-brand-dark: #0a0a0b;
+  --color-brand-card: #161618;
+  --color-brand-border: #27272a;
+  --background-image-glow-gradient: radial-gradient(
+    circle at 50% 50%,
+    rgba(139, 92, 246, 0.15) 0%,
+    rgba(10, 10, 11, 0) 70%
+  );
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  --animate-spin-slow: spin 8s linear infinite;
+}
+
+:root {
+  --brand-purple: #8b5cf6;
+  --brand-dark: #0a0a0b;
+  --brand-card: #161618;
+  --brand-border: #27272a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--brand-dark);
+  color: #d1d5db;
+  /* text-gray-300 */
+}
+
+.glow-overlay {
+  background: radial-gradient(
+    circle at center,
+    rgba(139, 92, 246, 0.08) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.selection-purple::selection {
+  background-color: var(--brand-purple);
+  color: white;
+}
+
+/* Glassmorphism */
+.glass-card {
+  background: rgba(22, 22, 24, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.glass-card:hover {
+  background: rgba(22, 22, 24, 0.6);
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0.5) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-purple {
+  background: linear-gradient(135deg, var(--brand-purple) 0%, #d946ef 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hide Scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
