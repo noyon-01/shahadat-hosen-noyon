@@ -200,13 +200,27 @@ const Hero = () => {
           className="flex flex-col sm:flex-row justify-center gap-4"
         >
           <Magnetic>
-            <button className="px-8 py-3 rounded-xl bg-brand-purple text-white font-semibold shadow-[0_0_30px_rgba(139,92,246,0.35)] hover:scale-105 transition-all">
+            <button
+              onClick={() => {
+                document.getElementById("projects")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+              className="px-8 py-3 cursor-pointer rounded-xl bg-brand-purple text-white font-semibold shadow-[0_0_30px_rgba(139,92,246,0.35)] hover:scale-105 transition-all"
+            >
               View My Work ↗
             </button>
           </Magnetic>
 
           <Magnetic>
-            <button className="px-8 py-3 rounded-xl border border-white/10 bg-white/[0.03] text-white font-semibold hover:border-brand-purple hover:bg-brand-purple/10 transition-all">
+            <button
+              onClick={() => {
+                document.getElementById("contact")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+              className="px-8 py-3 cursor-pointer rounded-xl border border-white/10 bg-white/[0.03] text-white font-semibold hover:border-brand-purple hover:bg-brand-purple/10 transition-all"
+            >
               Contact Me →
             </button>
           </Magnetic>

@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 const Projects = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -104,12 +105,11 @@ const Projects = () => {
             </p>
           </div>
 
-          <a
-            href="#"
-            className="px-5 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-sm text-white hover:bg-purple-600/20 transition"
-          >
-            Explore all →
-          </a>
+          <Link href={"/projects"}>
+            <p className="px-5 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-sm text-white hover:bg-purple-600/20 transition">
+              Explore all →
+            </p>
+          </Link>
         </motion.div>
 
         {/* grid */}
@@ -132,8 +132,8 @@ const Projects = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition" />
 
                 <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition">
-                  <span className="text-xs px-3 py-1 rounded-full bg-white/10 text-white backdrop-blur-md">
-                    View Project →
+                  <span className="text-xs px-3 py-1 rounded-full bg-white/10 text-white backdrop-blur-md cursor-pointer">
+                    <Link href={"/projectdetails"}>View Project →</Link>
                   </span>
                 </div>
               </div>

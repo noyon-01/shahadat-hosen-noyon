@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Magnetic from "./ui/Magnetic";
-import Link from "next/link";
 
 const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -148,6 +147,10 @@ const Navbar = () => {
               })}
             </div>
 
+            {/* <div>
+
+            </div> */}
+
             {/* Right Side */}
             <div className="flex items-center gap-3">
               {/* Hire Me Button */}
@@ -163,9 +166,15 @@ const Navbar = () => {
                       hover:scale-[1.03]
                       hover:shadow-brand-purple/40
                       transition-all duration-300
+                      cursor-pointer
                     "
                   >
-                    Hire Me →
+                    <a
+                      href="https://www.linkedin.com/in/shahadat-hosen-noyon/"
+                      target="_blank"
+                    >
+                      Hire Me →{" "}
+                    </a>
                   </button>
                 </Magnetic>
               </div>
@@ -226,18 +235,7 @@ const Navbar = () => {
 
                         setMobileMenu(false);
                       }}
-                      className={`
-          text-left
-          px-4 py-3 rounded-xl
-          text-sm font-medium
-          transition-all duration-300
-          active:scale-[0.98]
-          ${
-            isActive
-              ? "bg-brand-purple text-white"
-              : "text-white/70 hover:bg-white/10 hover:text-white"
-          }
-        `}
+                      className={`text-left px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300active:scale-[0.98] ${isActive ? "bg-brand-purple text-white" : "text-white/70 hover:bg-white/10 hover:text-white"}`}
                     >
                       {link.name}
                     </button>
@@ -245,16 +243,14 @@ const Navbar = () => {
                 })}
 
                 {/* Mobile Hire Me Button */}
-                <button
-                  className="
-      mt-2 py-3 rounded-xl
-      bg-gradient-to-r
-      from-brand-purple to-violet-500
-      text-white font-semibold text-sm
-      shadow-lg shadow-brand-purple/20
-    "
-                >
-                  Hire Me →
+
+                <button className="mt-2 py-3 rounded-xl bg-gradient-to-r from-brand-purple to-violet-500 text-white font-semibold text-sm shadow-lg shadow-brand-purple/20">
+                  <a
+                    href="https://www.linkedin.com/in/shahadat-hosen-noyon/"
+                    target="_blank"
+                  >
+                    Hire Me →
+                  </a>
                 </button>
               </div>
             </motion.div>
