@@ -39,7 +39,7 @@ const Experience = () => {
       id="experience"
       className="py-24 px-6 relative overflow-hidden bg-[#050816]"
     >
-      {/* 🌈 MODERN GRADIENT BACKGROUND */}
+      {/* MODERN GRADIENT BACKGROUND */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         {/* Base Gradient Depth */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(139,92,246,0.25),transparent_40%),radial-gradient(circle_at_bottom_right,rgba(34,211,238,0.18),transparent_45%),radial-gradient(circle_at_center,rgba(236,72,153,0.12),transparent_50%)]" />
@@ -75,7 +75,7 @@ const Experience = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl font-bold text-white mb-4">
-            Journey &{" "}
+            Education &{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500">
               Experience
             </span>

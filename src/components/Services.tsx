@@ -55,7 +55,10 @@ const Services = () => {
           viewport={{ once: true }}
           className="text-4xl md:text-5xl font-bold text-white mt-4 mb-16"
         >
-          My Specialized <span className="text-purple-500">Services</span>
+          My Specialized{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500">
+            Services
+          </span>
         </motion.h2>
 
         {/* cards */}

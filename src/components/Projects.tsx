@@ -93,7 +93,10 @@ const Projects = () => {
         >
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
-              Featured Projects<span className="text-purple-500">.</span>
+              Featured{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500">
+                Projects
+              </span>
             </h2>
             <p className="text-gray-400 mt-3 text-sm max-w-md">
               Selected works that showcase technical complexity and creative

@@ -24,20 +24,17 @@ const Contact = () => {
         viewport={{ once: true }}
         className="text-center mb-20"
       >
-        {" "}
         <span className="text-xs tracking-[0.35em] uppercase text-gray-400 font-semibold">
-          {" "}
-          Contact{" "}
-        </span>{" "}
-        <h2 className="text-4xl md:text-5xl font-bold text-white mt-4">
-          {" "}
-          Get In <span className="text-purple-500">Touch</span>{" "}
-        </h2>{" "}
+          Contact
+        </span>
+        <h2 className="text-4xl md:text-5xl font-bold text-white mt-4">Get In <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500">
+            Touch
+          </span>
+        </h2>
         <p className="text-gray-400 text-sm max-w-md mx-auto mt-4">
-          {" "}
           Open for collaborations, freelance work, or just a technical chat.
-          Let’s build something great.{" "}
-        </p>{" "}
+          Let’s build something great.
+        </p>
       </motion.div>
 
       <div className="max-w-6xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-10">

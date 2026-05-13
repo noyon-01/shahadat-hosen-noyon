@@ -119,7 +119,7 @@ const Hero = () => {
           </span>{" "}
           <br />a professional{" "}
           <span className="inline-block min-w-[106px]">
-            <span className="font-bold text-[16px] text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-pink-400">
+            <span className="font-bold text-[16px] text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500">
               {" "}
               <TypeAnimation
                 sequence={[
@@ -147,7 +147,7 @@ const Hero = () => {
           className="text-5xl md:text-6xl lg:text-6xl font-black text-white mb-6 leading-[1.1] tracking-tight"
         >
           Building Scalable <br /> Apps with Using{" "}
-          <span className="inline-block min-w-[255px] text-transparent bg-clip-text bg-gradient-to-r from-brand-purple via-fuchsia-400 to-cyan-400">
+          <span className="inline-block min-w-[255px] text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500">
             <AnimatePresence mode="wait">
               <motion.span
                 key={words[index]}
@@ -155,7 +155,7 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 exit={{ opacity: 0, y: -20, filter: "blur(8px)" }}
                 transition={{ duration: 0.6 }}
-                className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-pink-400"
+                className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500"
               >
                 {words[index]}
               </motion.span>
