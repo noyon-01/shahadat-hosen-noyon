@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Magnetic from "./ui/Magnetic";
 import ParticlesBackground from "./ui/ParticlesBackground";
 import { TypeAnimation } from "react-type-animation";
+import { Variants } from "framer-motion";
 
 const Hero = () => {
   const words = ["React.Js", "Next.Js", "Express", "Node.Js", "MongoDB"];
@@ -28,14 +29,14 @@ const Hero = () => {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { y: 30, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
       transition: {
         duration: 0.8,
-        ease: [0.6, 0.01, -0.05, 0.9],
+        ease: [0.6, 0.01, -0.05, 0.9] as const,
       },
     },
   };
