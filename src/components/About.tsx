@@ -139,7 +139,7 @@ const About = () => {
                     <img
                       alt="About Noyon"
                       className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                      src="https://i.ibb.co.com/3YG2WJmS/1.png"
+                      src="https://i.ibb.co.com/SwWzpPCb/1-1.png"
                     />
 
                     {/* FLOATING LABEL */}
