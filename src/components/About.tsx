@@ -139,7 +139,7 @@ const About = () => {
                     <img
                       alt="About Noyon"
                       className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                      src="https://i.ibb.co.com/JW6TJkYp/6.png"
+                      src="https://i.ibb.co.com/3YG2WJmS/1.png"
                     />
 
                     {/* FLOATING LABEL */}
@@ -273,7 +273,7 @@ const About = () => {
                 "Express",
                 "Tailwind",
                 "Firebase",
-                "Better-Auth"
+                "Better-Auth",
               ].map((tech) => (
                 <span
                   key={tech}
