@@ -35,40 +35,144 @@ const Projects = () => {
 
   const mainProjects = [
     {
-      title: "Keen-Keeper",
-      desc: "Smart task management platform for organizing daily productivity efficiently.",
-      tags: ["REACT.JS", "Tailwind CSS", "Daisy UI"],
-      img: "https://i.ibb.co.com/83zN2g7/keen-keeper.png",
+      title: "Doctor Appointment Manager",
+      desc: "Track, organize, and manage doctor appointments with a clean, modern dashboard for patients and healthcare providers.",
+      tags: [
+        "React.js",
+        "Next.js",
+        "Tailwind CSS",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Better-Auth",
+        "JWT",
+      ],
+      img: "https://i.ibb.co.com/GvvhSt6W/56.png",
+      live: (
+        <a
+          href="https://doctor-appointment-manager-59mv.vercel.app"
+          target="_blank"
+        >
+          View Project →
+        </a>
+      ),
+      Github: (
+        <a
+          href="https://github.com/noyon-01/doctor-appointment-manager"
+          target="_blank"
+        >
+          GitHub →
+        </a>
+      ),
     },
     {
       title: "Summer-Essentials-Store",
       desc: "Modern eCommerce store for trendy summer fashion and essentials.",
-      tags: ["NEXT.JS", "Tailwind CSS", "Hero UI", "Better Auth"],
+      tags: [
+        "React.js",
+        "Next.js",
+        "Tailwind CSS",
+        "Hero UI",
+        "Framer Motion",
+        "MongoDB",
+        "Better Auth",
+      ],
       img: "https://i.ibb.co.com/Y5N4CzZ/summer-store.png",
-    },
-    {
-      title: "English-Janala",
-      desc: "Interactive English learning platform with engaging lessons and practice.",
-      tags: ["HTML", "Tailwind CSS", "JavaScript"],
-      img: "https://i.ibb.co.com/ksHjvjDp/english-janala.png",
+      live: (
+        <a
+          href="https://summer-essentials-store-three.vercel.app"
+          target="_blank"
+        >
+          View Project →
+        </a>
+      ),
+      Github: (
+        <a
+          href="https://github.com/noyon-01/summer-essentials-store"
+          target="_blank"
+        >
+          GitHub →
+        </a>
+      ),
     },
     {
       title: "Digitools-Platform",
       desc: "All-in-one digital tools platform for productivity and workflow management.",
-      tags: ["REACT.JS", "Tailwind CSS", "Daisy UI"],
+      tags: [
+        "React.js",
+        "React Router",
+        "Context Api",
+        "Tailwind CSS",
+        "Daisy UI",
+      ],
       img: "https://i.ibb.co.com/twx0ZhQ3/digitools-platform.png",
+      live: (
+        <a href="https://digitools-project.vercel.app" target="_blank">
+          View Project →
+        </a>
+      ),
+      Github: (
+        <a
+          href="https://github.com/noyon-01/digitools-platform/tree/master/digitools-project"
+          target="_blank"
+        >
+          GitHub →
+        </a>
+      ),
+    },
+    {
+      title: "Keen-Keeper",
+      desc: "Smart task management platform for organizing daily productivity efficiently.",
+      tags: ["REACT.JS", "Tailwind CSS", "Daisy UI"],
+      img: "https://i.ibb.co.com/83zN2g7/keen-keeper.png",
+      live: (
+        <a href="https://keenkeeper-react-project.vercel.app" target="_blank">
+          View Project →
+        </a>
+      ),
+      Github: (
+        <a href="https://github.com/noyon-01/keen-keeper" target="_blank">
+          GitHub →
+        </a>
+      ),
     },
     {
       title: "GitHub-Issue-Tracker",
       desc: "Manage, track, and collaborate on GitHub issues efficiently.",
       tags: ["HTML", "CSS", "JavaScript"],
       img: "https://i.ibb.co.com/23y0YwB5/github-isssue-tracker.png",
+      live: (
+        <a
+          href="https://noyon-01.github.io/github-issue-tracker"
+          target="_blank"
+        >
+          View Project →
+        </a>
+      ),
+      Github: (
+        <a
+          href="https://github.com/noyon-01/github-issue-tracker"
+          target="_blank"
+        >
+          GitHub →
+        </a>
+      ),
     },
     {
-      title: "Job-Application-Tacker",
-      desc: "Track, organize, and manage job applications with modern dashboard UI.",
-      tags: ["HTML", "CSS", "JavaScript"],
-      img: "https://i.ibb.co.com/zh8xwRZN/job-application-tracker.png",
+      title: "English-Janala",
+      desc: "Interactive English learning platform with engaging lessons and practice.",
+      tags: ["HTML", "Tailwind CSS", "JavaScript"],
+      img: "https://i.ibb.co.com/ksHjvjDp/english-janala.png",
+      live: (
+        <a href="http://noyon-01.github.io/english-janala" target="_blank">
+          View Project →
+        </a>
+      ),
+      Github: (
+        <a href="https://github.com/noyon-01/english-janala" target="_blank">
+          GitHub →
+        </a>
+      ),
     },
   ];
 
@@ -129,11 +233,11 @@ const Projects = () => {
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition" />
 
-                <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition">
+                {/* <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition">
                   <span className="text-xs px-3 py-1 rounded-full bg-white/10 text-white backdrop-blur-md cursor-pointer">
                     View Project →
                   </span>
-                </div>
+                </div> */}
               </div>
 
               {/* content */}
@@ -160,15 +264,12 @@ const Projects = () => {
 
                 {/* footer link */}
                 <div className="mt-5 flex justify-between items-center">
-                  <a
-                    href="#"
-                    className="text-xs text-white/70 hover:text-purple-400 transition flex items-center gap-1"
-                  >
-                    Case Study <span>↗</span>
-                  </a>
+                  <p className="px-3 py-1 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 group-hover:text-purple-400 hover:text-sky-400 hover:border-sky-500/30 transition text-xs">
+                    {project.live}
+                  </p>
 
-                  <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 group-hover:text-purple-400 group-hover:border-purple-500/30 transition">
-                    →
+                  <div className="px-3 py-1 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 group-hover:text-purple-400 hover:text-sky-400 hover:border-sky-500/30 transition text-xs">
+                    {project.Github}
                   </div>
                 </div>
               </div>

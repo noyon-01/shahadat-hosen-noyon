@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Magnetic from "./ui/Magnetic";
+import { PiDownloadSimpleBold } from "react-icons/pi";
 
 const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -169,11 +170,19 @@ const Navbar = () => {
                       cursor-pointer
                     "
                   >
-                    <a
+                    {/* <a
                       href="https://www.linkedin.com/in/shahadat-hosen-noyon/"
                       target="_blank"
                     >
                       Hire Me →{" "}
+                    </a> */}
+
+                    <a
+                      className="flex justify-center items-center gap-1"
+                      href="/resume_of_shahadat_hosen_noyon.pdf"
+                      download
+                    >
+                      Hire Me →
                     </a>
                   </button>
                 </Magnetic>

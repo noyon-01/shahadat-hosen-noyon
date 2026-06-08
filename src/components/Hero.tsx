@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Magnetic from "./ui/Magnetic";
 import ParticlesBackground from "./ui/ParticlesBackground";
 import { TypeAnimation } from "react-type-animation";
 import { Variants } from "framer-motion";
+import { PiDownloadSimpleBold } from "react-icons/pi";
 
 const Hero = () => {
   const words = ["React.Js", "Next.Js", "Express", "Node.Js", "MongoDB"];
@@ -200,15 +201,8 @@ const Hero = () => {
           className="flex flex-col sm:flex-row justify-center gap-4"
         >
           <Magnetic>
-            <button
-              onClick={() => {
-                document.getElementById("projects")?.scrollIntoView({
-                  behavior: "smooth",
-                });
-              }}
-              className="px-8 py-3 cursor-pointer rounded-xl bg-brand-purple text-white font-semibold shadow-[0_0_30px_rgba(139,92,246,0.35)] hover:scale-105 transition-all"
-            >
-              View My Work ↗
+            <button className="px-8 py-3 cursor-pointer rounded-xl bg-brand-purple text-white font-semibold shadow-[0_0_30px_rgba(139,92,246,0.35)] hover:scale-105 transition-all">
+              <a className="flex justify-center items-center gap-1" href="/resume_of_shahadat_hosen_noyon.pdf" download>My Resume <span className="text-xl"><PiDownloadSimpleBold /></span></a>
             </button>
           </Magnetic>
 
