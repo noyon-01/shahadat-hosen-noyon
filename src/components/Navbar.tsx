@@ -255,8 +255,9 @@ const Navbar = () => {
 
                 <button className="mt-2 py-3 rounded-xl bg-gradient-to-r from-brand-purple to-violet-500 text-white font-semibold text-sm shadow-lg shadow-brand-purple/20">
                   <a
-                    href="https://www.linkedin.com/in/shahadat-hosen-noyon/"
-                    target="_blank"
+                    className="flex justify-center items-center gap-1"
+                    href="/resume_of_shahadat_hosen_noyon.pdf"
+                    download
                   >
                     Hire Me →
                   </a>
