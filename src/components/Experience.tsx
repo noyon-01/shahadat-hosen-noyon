@@ -9,7 +9,7 @@ const Experience = () => {
       id: "01",
       period: "2024 - PRESENT",
       status: "ACTIVE",
-      title: "Specializing in MERN Stack",
+      title: "Specializing in Frontend Development",
       institution: "@ Programming Hero",
       desc: "Focusing on professional software engineering, building production-grade projects like Summer-Essentials-Store, Keen-Keeper, Dragon-News, Book-Vibe and Digitools-Platform using Vanilla JavaScript, React.js, Next.js and full MERN stack.",
       tags: ["Next.js", "React.js", "Node", "Express", "MongoDB"],
